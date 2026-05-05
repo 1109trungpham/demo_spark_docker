@@ -13,6 +13,7 @@ services:
     volumes:
       # Lưu code notebook
       - ./notebooks:/home/iceberg/notebooks
+      - ./my_csv:/home/iceberg/my_csv
     environment:
       - AWS_ACCESS_KEY_ID=admin
       - AWS_SECRET_ACCESS_KEY=mypassword

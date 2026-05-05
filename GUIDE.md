@@ -13,10 +13,15 @@ Tạo file `docker-compose.yml` chứa 3 thành phần sau:
 ```
 demo_spark_docker/
 ├── minio_data/         # Nơi lưu trữ dữ liệu thực tế (Parquet, Metadata của Iceberg)
+├── my_csv/             # Nơi lưu trữ dữ liệu CSV thô
 ├── notebooks/          # Chứa các file Jupyter Notebook (.ipynb) để thử nghiệm
+|   └── test_csv.ipynb
 |   └── tutorials.ipynb
+├── python/             # Chứa code Python
+|   └── csv_creator.py
 ├── rest_catalog/       # Chứa Iceberg REST Catalog
 ├── .env                # File chứa các biến môi trường và version của image
+├── .gitignore
 ├── docker-compose.yml  # File cấu trúc toàn bộ hạ tầng các container
 ├── GUIDE.md            # Tài liệu hướng dẫn sử dụng chi tiết
 └── README.md         
